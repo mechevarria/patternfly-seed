@@ -1,0 +1,26 @@
+{
+  "name": "patternfly-example",
+  "version": "0.1.0",
+  "description": "Patternfly example",
+  "dependencies": {},
+  "devDependencies": {
+    "bower": "*",
+    "eslint": "3.16.1",
+    "eslint-config-standard": "6.2.1",
+    "eslint-plugin-promise": "3.4.2",
+    "eslint-plugin-standard": "2.0.1",
+    "grunt": "1.0.1",
+    "grunt-autoprefixer": "3.0.4",
+    "grunt-connect-proxy": "0.2.0",
+    "grunt-contrib-clean": "1.0.0",
+    "grunt-contrib-connect": "1.0.2",
+    "grunt-contrib-watch": "1.0.0",
+    "grunt-eslint": "19.0.0",
+    "load-grunt-tasks": "3.5.2",
+    "serve-static": "1.11.2",
+    "time-grunt": "1.4.0"
+  },
+  "engines": {
+    "node": ">=0.8.15"
+  }
+}

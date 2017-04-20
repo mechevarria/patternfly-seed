@@ -1,0 +1,7 @@
+{
+  "name": "patternfly-example",
+  "version": "0.1.0",
+  "dependencies": {
+    "angular-patternfly": "3.23.2"
+  }
+}
