@@ -1,7 +1,7 @@
 {
-  "name": "patternfly-example",
+  "name": "patternfly-seed",
   "version": "0.1.0",
-  "description": "Patternfly example",
+  "description": "Patternfly seed project",
   "dependencies": {},
   "devDependencies": {
     "bower": "*",

@@ -22,11 +22,11 @@ module.exports = function(grunt) {
             }
         },
         connect: {
-            proxies: [{
-                context: '/odata',
-                host: 'demo-vm',
-                port: 8080
-            }],
+            // proxies: [{
+            //     context: '/odata',
+            //     host: 'demo-vm',
+            //     port: 8080
+            // }],
             options: {
                 port: 9000,
                 // Change this to '0.0.0.0' to access the server from outside.
