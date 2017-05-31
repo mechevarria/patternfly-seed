@@ -7,7 +7,7 @@ If you do not have grunt already installed do
 `npm install -g grunt-cli`
 
 
-Then to build
+Then to grab the server and web dependencies
 
 `npm install`
 
@@ -15,3 +15,9 @@ Then to build
 
 ## run
 `grunt`
+
+A browser should open up on `localhost:9000`
+
+You can edit the server options in `Gruntfile.js`.  You can add a proxy to an api backend and allow external connections.
+
+![cli.png](screenshot.png)
