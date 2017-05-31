@@ -2,6 +2,6 @@
   "name": "patternfly-seed",
   "version": "0.1.0",
   "dependencies": {
-    "angular-patternfly": "3.23.2"
+    "angular-patternfly": "4.0.0"
   }
 }

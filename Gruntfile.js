@@ -15,6 +15,8 @@ module.exports = function(grunt) {
                 },
                 files: [
                     'app/components/**/*.html',
+                    'app/components/**/*.js',
+                    'index.html',
                     'assets/css/*.css',
                     '<%= eslint.target %>'
                 ],
@@ -22,9 +24,10 @@ module.exports = function(grunt) {
             }
         },
         connect: {
+            // use this to create connections to backend without cors issues
             // proxies: [{
-            //     context: '/odata',
-            //     host: 'demo-vm',
+            //     context: '/backend-api',
+            //     host: 'localhost',
             //     port: 8080
             // }],
             options: {
@@ -56,7 +59,7 @@ module.exports = function(grunt) {
         }
     });
 
-    grunt.registerTask('client', [
+    grunt.registerTask('default', [
         'eslint',
         'configureProxies',
         'connect:livereload',

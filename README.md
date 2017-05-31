@@ -14,4 +14,4 @@ Then to build
 `bower install`
 
 ## run
-`grunt client`
+`grunt`
