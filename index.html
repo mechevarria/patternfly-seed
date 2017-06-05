@@ -1,13 +1,17 @@
 <!doctype html>
 <html ng-app="patternfly.app">
 <head>
-    <!-- Angular-PatternFly Styles -->
     <title>Patternfly Seed</title>
+
+    <!-- build:css assets/css/vendor.css -->
     <link rel="stylesheet" href="bower_components/patternfly/dist/css/patternfly.min.css">
     <link rel="stylesheet" href="bower_components/patternfly/dist/css/patternfly-additions.min.css">
     <link rel="stylesheet" href="bower_components/angular-patternfly/dist/styles/angular-patternfly.min.css">
+    <!-- endbuild -->
 
+    <!-- build:css assets/css/app.css -->
     <link href="assets/css/app.css" rel="stylesheet">
+    <!-- endbuild -->
 </head>
 <body>
 
@@ -43,6 +47,7 @@
     </ui-view>
 </div>
 
+<!-- build:js assets/js/vendor.js -->
 <script src="bower_components/angular-patternfly/dist/docs/grunt-scripts/jquery.js"></script>
 <script src="bower_components/angular-patternfly/dist/docs/grunt-scripts/bootstrap.js"></script>
 <script src="bower_components/angular-patternfly/dist/docs/grunt-scripts/bootstrap-combobox.js"></script>
@@ -63,7 +68,9 @@
 <script src="bower_components/angular-patternfly/dist/docs/grunt-scripts/angular-patternfly.js"></script>
 <script src="bower_components/angular-patternfly/dist/docs/grunt-scripts/angular-ui-router.min.js"></script>
 <script src="bower_components/angular-patternfly/dist/docs/grunt-scripts/angular-drag-and-drop-lists.js"></script>
+<!-- endbuild -->
 
+<!-- build:js assets/js/app.js -->
 <script src="app/app.js"></script>
 <script src="app/components/home/home-router.js"></script>
 <script src="app/components/home/home-controller.js"></script>
@@ -73,5 +80,7 @@
 <script src="app/components/link2/link2-controller.js"></script>
 <script src="app/components/link3/link3-router.js"></script>
 <script src="app/components/link3/link3-controller.js"></script>
+<!-- endbuild -->
+
 </body>
 </html>
