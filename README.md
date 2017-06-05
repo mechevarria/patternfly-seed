@@ -1,5 +1,5 @@
 # patternfly-seed 
-Patternfly Angular Seed project
+Patternfly Angular Seed project.  This project provides the infrastructure for development, livereload, code validation and production optimizations for deployment.
 
 ## Install
 If you do not have grunt already installed do
@@ -18,7 +18,7 @@ Then to grab the server and web dependencies
 
 which defaults to the development task `grunt dev`
 
-This task will [eslint](http://eslint.org/) your Javascript and also serve a local site on `localhost:9000`
+This task will [eslint](http://eslint.org/) your Javascript and also serve a local site on `localhost:9000`.  In addition it will watch and live reload changes to your application
 
 You can edit the server options in `Gruntfile.js` under the **connect** task configuration
 
