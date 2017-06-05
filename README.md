@@ -1,7 +1,7 @@
 # patternfly-seed 
 Patternfly Angular Seed project
 
-## build
+## Install
 If you do not have grunt already installed do
 
 `npm install -g grunt-cli`
@@ -13,11 +13,27 @@ Then to grab the server and web dependencies
 
 `bower install`
 
-## run
+## Local Dev
 `grunt`
 
-A browser should open up on `localhost:9000`
+which defaults to the development task `grunt dev`
 
-You can edit the server options in `Gruntfile.js`.  You can add a proxy to an api backend and allow external connections.
+This task will [eslint](http://eslint.org/) your Javascript and also serve a local site on `localhost:9000`
+
+You can edit the server options in `Gruntfile.js` under the **connect** task configuration
 
 ![cli.png](screenshot.png)
+
+## Production Build
+
+To do a production build that **eslints, concats, minifies and uglifies** Javascript and CSS, run the following task
+
+`grunt build`
+
+The generated site and assets will be in the **dist** folder
+
+## Run the production build
+
+To serve the production build run the following task
+
+`grunt prod`
