@@ -15,36 +15,24 @@
 </head>
 <body>
 
-<nav class="navbar navbar-default navbar-pf" role="navigation">
-    <div class="navbar-header">
-        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse-1">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-        </button>
-        <a class="navbar-brand app-logo" ui-sref="home">
-            <img src="assets/img/logo.png" alt="Patternfly-Seed"/>
-        </a>
+<div class="layout-pf layout-pf-fixed" ng-controller="NavCtrl">
+    <pf-vertical-navigation items="navItems"
+                            brand-src="assets/img/logo.png"
+                            brand-alt="PatternFLY Example"
+                            show-badges="true">
+        <div>
+            <ul class="nav navbar-nav navbar-right navbar-iconic">
+                <li class="dropdown">
+                </li>
+            </ul>
+        </div>
+    </pf-vertical-navigation>
+
+    <div id="contentContainer" class="container-fluid container-cards-pf container-pf-nav-pf-vertical">
+        <ui-view>
+            <!-- Content will be added here -->
+        </ui-view>
     </div>
-    <div class="collapse navbar-collapse navbar-collapse-1">
-        <ul class="nav navbar-nav navbar-primary">
-            <li ui-sref-active="active">
-                <a ui-sref="link1">First Link</a>
-            </li>
-            <li ui-sref-active="active">
-                <a ui-sref="link2">Second Link</a>
-            </li>
-            <li ui-sref-active="active">
-                <a ui-sref="link3">Third Link</a>
-            </li>
-        </ul>
-    </div>
-</nav>
-<div id="contentContainer" class="container-fluid container-cards-pf">
-    <ui-view>
-        <!-- View Content -->
-    </ui-view>
 </div>
 
 <!-- build:js assets/js/vendor.js -->
@@ -72,6 +60,7 @@
 
 <!-- build:js assets/js/app.js -->
 <script src="app/app.js"></script>
+<script src="app/components/nav/nav-controller.js"></script>
 <script src="app/components/home/home-router.js"></script>
 <script src="app/components/home/home-controller.js"></script>
 <script src="app/components/link1/link1-router.js"></script>
