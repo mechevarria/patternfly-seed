@@ -1,6 +1,13 @@
 # patternfly-seed 
 Patternfly Angular Seed project.  This project provides the infrastructure for development, livereload, code validation and production optimizations for deployment.
 
+Referenced projects:
+
+[PatternFly](http://www.patternfly.org/)
+
+[Angular PatternFly](http://www.patternfly.org/angular-patternfly)
+
+
 ## Install
 If you do not have grunt already installed do
 
