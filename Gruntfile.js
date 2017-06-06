@@ -83,6 +83,11 @@ module.exports = function(grunt) {
                         'assets/img/*'
                     ],
                     dest: 'dist/'
+                }, {
+                    expand: true,
+                    flatten: true,
+                    src: 'bower_components/font-awesome/fonts/*',
+                    dest: 'dist/assets/fonts/'
                 }]
             }
         },
