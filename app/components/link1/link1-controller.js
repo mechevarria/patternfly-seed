@@ -9,5 +9,6 @@
     function Controller($scope) {
 
         $scope.name = 'Link 1';
+        $scope.$emit('success', 'Successfully changed state to ' + $scope.name);
     }
 })();

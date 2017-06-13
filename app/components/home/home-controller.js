@@ -9,5 +9,6 @@
     function Controller($scope) {
 
         $scope.name = 'Home';
+        $scope.$emit('success', 'Successfully changed state to ' + $scope.name);
     }
 })();

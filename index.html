@@ -28,7 +28,12 @@
         </div>
     </pf-vertical-navigation>
 
-    <div id="contentContainer" class="container-fluid container-cards-pf container-pf-nav-pf-vertical">
+    <div id="contentContainer" class="container-fluid container-cards-pf container-pf-nav-pf-vertical" ng-controller="ToastCtrl">
+
+        <!-- container for toast notifications -->
+        <pf-toast-notification-list notifications="notifications">
+        </pf-toast-notification-list>
+
         <ui-view>
             <!-- Content will be added here -->
         </ui-view>
@@ -61,6 +66,7 @@
 <!-- build:js assets/js/app.js -->
 <script src="app/app.js"></script>
 <script src="app/components/nav/nav-controller.js"></script>
+<script src="app/components/toast/toast-controller.js"></script>
 <script src="app/components/home/home-router.js"></script>
 <script src="app/components/home/home-controller.js"></script>
 <script src="app/components/link1/link1-router.js"></script>
