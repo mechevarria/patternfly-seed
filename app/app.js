@@ -2,7 +2,7 @@
     'use strict';
 
     angular.module('patternfly.app', [
-        'patternfly.navigation',
+        'patternfly',
         'ui.router'
     ]);
 })();
