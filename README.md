@@ -9,7 +9,7 @@ Referenced projects:
 
 
 ## Install
-If you do not have grunt already installed do
+If you do not have grunt already installed in the command line do
 
 `npm install -g grunt-cli`
 
@@ -17,8 +17,6 @@ If you do not have grunt already installed do
 Then to grab the server and web dependencies
 
 `npm install`
-
-`bower install`
 
 ## Local Dev
 `grunt`
