@@ -4,9 +4,9 @@
     angular.module('patternfly.app')
         .controller('NavCtrl', Controller);
 
-    Controller.$inject = ['$scope', 'Notifications'];
+    Controller.$inject = ['$scope', 'Notifications', '$rootScope'];
 
-    function Controller($scope, Notifications) {
+    function Controller($scope, Notifications, $rootScope) {
 
         $scope.navItems = [
             {
@@ -42,19 +42,19 @@
 
         $scope.clear();
 
-        $scope.$on('success', function (event, data) {
+        $rootScope.$on('success', function (event, data) {
             notify('success', data);
         });
 
-        $scope.$on('error', function (event, data) {
+        $rootScope.$on('error', function (event, data) {
             notify('danger', data);
         });
 
-        $scope.$on('info', function (event, data) {
+        $rootScope.$on('info', function (event, data) {
             notify('info', data);
         });
 
-        $scope.$on('warning', function (event, data) {
+        $rootScope.$on('warning', function (event, data) {
             notify('warning', data);
         });
 

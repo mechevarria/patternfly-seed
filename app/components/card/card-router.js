@@ -12,10 +12,10 @@
                 name: 'card',
                 url:'/card',
                 controller: 'CardCtrl',
-                parent: 'home',
                 templateUrl: 'app/components/card/card.html',
                 ncyBreadcrumb: {
-                    label: 'Card View'
+                    label: 'Card View',
+                    parent: 'home'
                 }
             });
 

@@ -9,7 +9,6 @@
     function Controller($scope) {
 
         $scope.name = 'Home';
-        $scope.$emit('success', 'Successfully changed state to ' + $scope.name);
 
         $scope.config = {
             icon: 'fa fa-arrow-circle-left',
