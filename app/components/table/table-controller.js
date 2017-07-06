@@ -13,5 +13,18 @@
 
         $scope.items = TableSrvc.getItems();
 
+        $scope.columns = [
+            {header: 'Name', itemField: 'name'},
+            {header: 'Address', itemField: 'address'},
+            {header: 'City', itemField: 'city'},
+            {header: 'State', itemField: 'state'}
+        ];
+
+        $scope.config = {
+            selectionMatchProp: 'name',
+            itemsAvailable: true,
+            showCheckboxes: false
+        };
+
     }
 })();
