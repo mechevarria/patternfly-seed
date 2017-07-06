@@ -9,7 +9,7 @@
         var factory = {};
 
         factory.getItems = function () {
-            var items = [
+            return [
                 {
                     name: 'Fred Flintstone',
                     address: '20 Dinosaur Way',
@@ -20,7 +20,7 @@
                     name: 'John Smith',
                     address: '415 East Main Street',
                     city: 'Norfolk',
-                    state: 'Virginia',
+                    state: 'Virginia'
                 },
                 {
                     name: 'Frank Livingston',
@@ -59,8 +59,6 @@
                     state: 'New York'
                 }
             ];
-
-            return items;
         };
 
         return factory;
