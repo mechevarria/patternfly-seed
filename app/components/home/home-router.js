@@ -14,7 +14,10 @@
                 name: 'home',
                 url:'/home',
                 controller: 'HomeCtrl',
-                templateUrl: 'app/components/home/home.html'
+                templateUrl: 'app/components/home/home.html',
+                ncyBreadcrumb: {
+                    label: 'Home'
+                }
             });
 
     }

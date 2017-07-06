@@ -6,6 +6,7 @@
         'ngAnimate',
         'patternfly',
         'ui.router',
-        'ui.bootstrap'
+        'ui.bootstrap',
+        'ncy-angular-breadcrumb'
     ]);
 })();

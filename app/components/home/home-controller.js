@@ -10,5 +10,11 @@
 
         $scope.name = 'Home';
         $scope.$emit('success', 'Successfully changed state to ' + $scope.name);
+
+        $scope.config = {
+            icon: 'fa fa-arrow-circle-left',
+            title: 'PatternFly Seed',
+            info: 'Click one of the links on the left to get started.'
+        };
     }
 })();

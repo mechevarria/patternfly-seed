@@ -65,6 +65,7 @@
     </pf-vertical-navigation>
 
     <div id="contentContainer" class="container-fluid container-cards-pf container-pf-nav-pf-vertical">
+        <div ncy-breadcrumb></div>
         <ui-view>
             <!-- Content will be added here -->
         </ui-view>
@@ -93,6 +94,7 @@
 <script src="bower_components/angular-patternfly/dist/docs/grunt-scripts/angular-ui-router.min.js"></script>
 <script src="bower_components/angular-patternfly/dist/docs/grunt-scripts/angular-drag-and-drop-lists.js"></script>
 <script src="bower_components/angular-resource/angular-resource.js"></script>
+<script src="bower_components/angular-breadcrumb/dist/angular-breadcrumb.js"></script>
 <!-- endbuild -->
 
 <!-- build:js assets/js/app.js -->
@@ -100,10 +102,11 @@
 <script src="app/components/nav/nav-controller.js"></script>
 <script src="app/components/home/home-router.js"></script>
 <script src="app/components/home/home-controller.js"></script>
-<script src="app/components/link1/link1-router.js"></script>
-<script src="app/components/link1/link1-controller.js"></script>
-<script src="app/components/link2/link2-router.js"></script>
-<script src="app/components/link2/link2-controller.js"></script>
+<script src="app/components/card/card-router.js"></script>
+<script src="app/components/card/card-controller.js"></script>
+<script src="app/components/table/table-router.js"></script>
+<script src="app/components/table/table-controller.js"></script>
+<script src="app/components/table/table-service.js"></script>
 <!-- endbuild -->
 
 </body>

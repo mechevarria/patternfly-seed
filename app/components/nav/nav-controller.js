@@ -10,19 +10,14 @@
 
         $scope.navItems = [
             {
-                title: "Home",
-                iconClass: "fa fa-home",
-                uiSref: "home"
-            },
-            {
-                title: "Link1",
+                title: "Card View",
                 iconClass: "fa fa-file",
-                uiSref: "link1"
+                uiSref: "card"
             },
             {
-                title: "Link2",
-                iconClass: "fa fa-file-o",
-                uiSref: "link2"
+                title: "Table View",
+                iconClass: "fa fa-table",
+                uiSref: "table"
             }
         ];
 
