@@ -13,6 +13,10 @@
 
         $scope.items = TableSrvc.getItems();
 
+        $scope.dtOptions = {
+            paging: false
+        };
+
         $scope.columns = [
             {header: 'Name', itemField: 'name'},
             {header: 'Address', itemField: 'address'},
