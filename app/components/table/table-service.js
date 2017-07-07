@@ -57,6 +57,24 @@
                     address: '50 Second Street',
                     city: 'New York',
                     state: 'New York'
+                },
+                {
+                    name: 'Mike Thomas',
+                    address: '25 Second Street',
+                    city: 'Chicago',
+                    state: 'Illinois'
+                },
+                {
+                    name: 'Holly Davidson',
+                    address: '22 Jump Street',
+                    city: 'Long Beach',
+                    state: 'California'
+                },
+                {
+                    name: 'David Verona',
+                    address: '35 Ocean Drive',
+                    city: 'Miami',
+                    state: 'Florida'
                 }
             ];
         };
