@@ -13,8 +13,7 @@
             .state({
                 name: 'home',
                 url:'/home',
-                controller: 'HomeCtrl',
-                templateUrl: 'app/components/home/home.html',
+                component: 'appHome',
                 ncyBreadcrumb: {
                     label: 'Home'
                 }

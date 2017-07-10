@@ -18,9 +18,9 @@
 
 <div class="layout-pf layout-pf-fixed">
 
-    <nav-menu>
+    <app-nav>
         <!-- navigation menu component -->
-    </nav-menu>
+    </app-nav>
 
     <div id="contentContainer" class="container-fluid container-cards-pf container-pf-nav-pf-vertical">
         <div ncy-breadcrumb></div>
@@ -50,19 +50,26 @@
 <script src="node_modules/angular-ui-bootstrap/dist/ui-bootstrap-tpls.js"></script>
 <script src="node_modules/lodash/lodash.js"></script>
 <script src="node_modules/angular-patternfly/dist/angular-patternfly.js"></script>
-<script src="node_modules/angular-datatables/vendor/angular-ui-router/release/angular-ui-router.js"></script>
+<script src="node_modules/@uirouter/angularjs/release/angular-ui-router.js"></script>
 <script src="node_modules/angular-drag-and-drop-lists/angular-drag-and-drop-lists.js"></script>
 <script src="node_modules/angular-breadcrumb/dist/angular-breadcrumb.js"></script>
 <!-- endbuild -->
 
 <!-- build:js assets/js/app.js -->
 <script src="app/app.js"></script>
+
 <script src="app/components/nav/nav-component.js"></script>
 <script src="app/components/nav/nav-controller.js"></script>
+
+<script src="app/components/home/home-component.js"></script>
 <script src="app/components/home/home-router.js"></script>
 <script src="app/components/home/home-controller.js"></script>
+
+<script src="app/components/card/card-component.js"></script>
 <script src="app/components/card/card-router.js"></script>
 <script src="app/components/card/card-controller.js"></script>
+
+<script src="app/components/table/table-component.js"></script>
 <script src="app/components/table/table-router.js"></script>
 <script src="app/components/table/table-controller.js"></script>
 <script src="app/components/table/table-service.js"></script>

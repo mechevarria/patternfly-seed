@@ -11,8 +11,7 @@
             .state({
                 name: 'table',
                 url:'/table',
-                controller: 'TableCtrl',
-                templateUrl: 'app/components/table/table.html',
+                component: 'appTable',
                 ncyBreadcrumb: {
                     label: 'Table View',
                     parent: 'home'

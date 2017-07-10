@@ -11,8 +11,7 @@
             .state({
                 name: 'card',
                 url:'/card',
-                controller: 'CardCtrl',
-                templateUrl: 'app/components/card/card.html',
+                component: 'appCard',
                 ncyBreadcrumb: {
                     label: 'Card View',
                     parent: 'home'
