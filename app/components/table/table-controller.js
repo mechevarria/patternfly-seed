@@ -14,7 +14,9 @@
         $scope.items = TableSrvc.getItems();
 
         $scope.dtOptions = {
-            paging: false
+            paginationType: 'full',
+            displayLength: 20,
+            dom: 'irtp'
         };
 
         $scope.columns = [
