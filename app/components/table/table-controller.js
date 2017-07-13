@@ -4,29 +4,30 @@
     angular.module('patternfly.app')
         .controller('TableCtrl', Controller);
 
-    Controller.$inject = ['$scope', 'TableSrvc'];
+    Controller.$inject = ['$rootScope', 'TableSrvc'];
 
-    function Controller($scope, TableSrvc) {
+    function Controller($rootScope, TableSrvc) {
+        var $ctrl = this;
 
-        $scope.name = 'Table';
-        $scope.$emit('success', 'Successfully changed state to ' + $scope.name);
+        $ctrl.name = 'Table';
+        $rootScope.$emit('success', 'Successfully changed state to ' + $ctrl.name);
 
-        $scope.items = TableSrvc.getItems();
+        $ctrl.items = TableSrvc.getItems();
 
-        $scope.dtOptions = {
+        $ctrl.dtOptions = {
             paginationType: 'full',
             displayLength: 20,
             dom: 'irtp'
         };
 
-        $scope.columns = [
+        $ctrl.columns = [
             {header: 'Name', itemField: 'name'},
             {header: 'Address', itemField: 'address'},
             {header: 'City', itemField: 'city'},
             {header: 'State', itemField: 'state'}
         ];
 
-        $scope.config = {
+        $ctrl.config = {
             selectionMatchProp: 'name',
             itemsAvailable: true,
             showCheckboxes: false

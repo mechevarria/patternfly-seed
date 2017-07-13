@@ -4,11 +4,12 @@
     angular.module('patternfly.app')
         .controller('CardCtrl', Controller);
 
-    Controller.$inject = ['$scope'];
+    Controller.$inject = ['$rootScope'];
 
-    function Controller($scope) {
+    function Controller($rootScope) {
+        var $ctrl = this;
 
-        $scope.name = 'Card';
-        $scope.$emit('success', 'Successfully changed state to ' + $scope.name);
+        $ctrl.name = 'Card';
+        $rootScope.$emit('success', 'Successfully changed state to ' + $ctrl.name);
     }
 })();

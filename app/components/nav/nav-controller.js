@@ -4,30 +4,28 @@
     angular.module('patternfly.app')
         .controller('NavCtrl', Controller);
 
-    Controller.$inject = ['$scope', 'Notifications', '$rootScope'];
+    Controller.$inject = ['$rootScope', 'Notifications'];
 
-    function Controller($scope, Notifications, $rootScope) {
+    function Controller($rootScope, Notifications) {
+        var $ctrl = this;
 
-        $scope.navItems = [
-            {
+        $ctrl.navItems = [{
                 title: "Card View",
                 iconClass: "fa fa-file",
                 uiSref: "card"
-            },
-            {
+            }, {
                 title: "Table View",
                 iconClass: "fa fa-table",
                 uiSref: "table"
-            }
-        ];
+            }];
 
         // Notifications
-        $scope.clear = function () {
-            $scope.notifyCount = 0;
-            $scope.menuItems = [];
+        $ctrl.clear = function () {
+            $ctrl.notifyCount = 0;
+            $ctrl.menuItems = [];
         };
 
-        $scope.getClass = function (type) {
+        $ctrl.getClass = function (type) {
             switch (type) {
                 case 'success':
                     return 'pficon-ok';
@@ -40,7 +38,7 @@
             }
         };
 
-        $scope.clear();
+        $ctrl.clear();
 
         $rootScope.$on('success', function (event, data) {
             notify('success', data);
@@ -59,14 +57,14 @@
         });
 
         function notify(type, msg) {
-            $scope.notifyCount++;
-            $scope.menuItems.push({
+            $ctrl.notifyCount++;
+            $ctrl.menuItems.push({
                 type: type,
                 msg: msg
             });
             Notifications.message(type, '', msg);
         }
 
-        $scope.notifications = Notifications.data;
+        $ctrl.notifications = Notifications.data;
     }
 })();
