@@ -4,13 +4,13 @@
     angular.module('patternfly.app')
         .controller('TableCtrl', Controller);
 
-    Controller.$inject = ['$rootScope', 'TableSrvc'];
+    Controller.$inject = ['NotifySrvc', 'TableSrvc'];
 
-    function Controller($rootScope, TableSrvc) {
+    function Controller(NotifySrvc, TableSrvc) {
         var $ctrl = this;
 
         $ctrl.name = 'Table';
-        $rootScope.$emit('success', 'Successfully changed state to ' + $ctrl.name);
+        NotifySrvc.success('Successfully changed state to ' + $ctrl.name);
 
         $ctrl.items = TableSrvc.getItems();
 

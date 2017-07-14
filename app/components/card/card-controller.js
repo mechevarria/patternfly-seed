@@ -4,12 +4,12 @@
     angular.module('patternfly.app')
         .controller('CardCtrl', Controller);
 
-    Controller.$inject = ['$rootScope'];
+    Controller.$inject = ['NotifySrvc'];
 
-    function Controller($rootScope) {
+    function Controller(NotifySrvc) {
         var $ctrl = this;
 
         $ctrl.name = 'Card';
-        $rootScope.$emit('success', 'Successfully changed state to ' + $ctrl.name);
+        NotifySrvc.success('Successfully changed state to ' + $ctrl.name);
     }
 })();
