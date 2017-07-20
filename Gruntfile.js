@@ -31,14 +31,13 @@ module.exports = function(grunt) {
             //     port: 8080
             // }],
             options: {
-                port: 9001,
-                livereload: 35729
+                port: 8080,
+                livereload: 35729,
+		hostname: '0.0.0.0'
             },
             livereload: {
                 options: {
                     open: true,
-                    // change to 0.0.0.0 to allow external connections
-                    hostname: 'localhost',
                     middleware: function() {
                         return [
                             proxySnippet,
@@ -50,7 +49,6 @@ module.exports = function(grunt) {
             dist: {
                 options: {
                     open: true,
-                    hostname: '0.0.0.0',
                     keepalive : true,
                     middleware: function() {
                         return [
