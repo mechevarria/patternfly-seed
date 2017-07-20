@@ -38,6 +38,6 @@
   },
   "scripts": {
     "start": "node_modules/grunt-cli/bin/grunt prod",
-    "dev": "node_modules/grunt-cli/bin/grunt"
+    "dev": "node_modules/grunt-cli/bin/grunt dev"
   }
 }
