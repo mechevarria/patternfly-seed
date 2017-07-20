@@ -16,6 +16,7 @@
     "eslint-plugin-import": "2.7.0",
     "eslint-plugin-node": "5.1.0",
     "grunt": "0.4.5",
+    "grunt-cli" : "1.2.0",
     "grunt-autoprefixer": "3.0.4",
     "grunt-connect-proxy": "0.2.0",
     "grunt-contrib-clean": "1.1.0",
@@ -36,7 +37,7 @@
     "npm": "*"
   },
   "scripts": {
-    "start": "grunt prod",
-    "dev": "grunt"
+    "start": "node_modules/grunt-cli/bin/grunt prod",
+    "dev": "node_modules/grunt-cli/bin/grunt"
   }
 }
