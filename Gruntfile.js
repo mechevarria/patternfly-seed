@@ -1,7 +1,22 @@
 'use strict';
 
+// run on port 8081 for local development to prevent java backend port conflicts
+var exposePort;
+var runtime;
+
+if (process.env.container === 'oci') {
+    exposePort = 8080;
+    runtime = 'OpenShift';
+} else {
+    exposePort = 8081;
+    runtime = 'local';
+}
+
+console.log('Running on ' + runtime + ', setting port to ' + exposePort); // eslint-disable-line no-console
+
 var proxySnippet = require('grunt-connect-proxy/lib/utils').proxyRequest;
 var serveStatic = require('serve-static');
+
 
 module.exports = function(grunt) {
     require('load-grunt-tasks')(grunt);
@@ -31,13 +46,13 @@ module.exports = function(grunt) {
             //     port: 8080
             // }],
             options: {
-                port: 8080,
+                port: exposePort,
+                hostname: '0.0.0.0',
                 livereload: 35729,
             },
             livereload: {
                 options: {
                     open: true,
-                    hostname: '0.0.0.0',
                     middleware: function() {
                         return [
                             proxySnippet,
@@ -49,7 +64,6 @@ module.exports = function(grunt) {
             dist: {
                 options: {
                     open: true,
-                    hostname: '0.0.0.0',
                     keepalive : true,
                     middleware: function() {
                         return [
