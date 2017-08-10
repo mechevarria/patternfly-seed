@@ -93,6 +93,7 @@ module.exports = function(grunt) {
                     expand: true,
                     src: [
                         'app/**/*.html',
+                        'app/**/*.json',
                         'index.html',
                         'assets/img/*'
                     ],
