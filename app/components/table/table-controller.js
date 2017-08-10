@@ -12,7 +12,15 @@
         $ctrl.name = 'Table';
         NotifySrvc.success('Successfully changed state to ' + $ctrl.name);
 
-        $ctrl.items = TableSrvc.getItems();
+        $ctrl.items = [];
+
+        TableSrvc.getItems()
+            .then(function (resp) {
+                $ctrl.items = resp.data;
+            })
+            .catch(function (err) {
+                NotifySrvc.error(err.status + ', ' + err.statusText);
+            });
 
         $ctrl.dtOptions = {
             paginationType: 'full',
