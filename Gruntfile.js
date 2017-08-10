@@ -40,11 +40,11 @@ module.exports = function(grunt) {
         },
         connect: {
             // use this to create connections to backend without cors issues
-            // proxies: [{
-            //     context: '/backend-api',
-            //     host: 'localhost',
-            //     port: 8080
-            // }],
+            proxies: [{
+                context: '/odata4',
+                host: 'localhost',
+                port: 8080
+            }],
             options: {
                 port: exposePort,
                 hostname: '0.0.0.0',

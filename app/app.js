@@ -8,6 +8,7 @@
         'patternfly.table',
         'ui.router',
         'ui.bootstrap',
-        'ncy-angular-breadcrumb'
+        'ncy-angular-breadcrumb',
+        'base64'
     ]);
 })();
