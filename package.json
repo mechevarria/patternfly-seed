@@ -9,10 +9,11 @@
     "url": "https://github.com/mechevarria/patternfly-seed.git"
   },
   "dependencies": {
+    "angular": "1.5.11",
+    "angular-resource": "1.5.11",
+    "angular-patternfly": "4.3.4",
     "@uirouter/angularjs": "1.0.5",
     "angular-breadcrumb": "0.5.0",
-    "angular-patternfly": "4.1.1",
-    "angular-resource": "1.5.11",
     "angular-base64": "2.0.5"
   },
   "devDependencies": {
@@ -44,6 +45,7 @@
     "npm": "*"
   },
   "scripts": {
+    "postinstall": "npm dedupe",
     "start": "node_modules/grunt-cli/bin/grunt prod",
     "dev": "node_modules/grunt-cli/bin/grunt dev"
   }
