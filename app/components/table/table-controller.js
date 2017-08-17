@@ -22,10 +22,10 @@
                 NotifySrvc.error(err.status + ', ' + err.statusText);
             });
 
-        $ctrl.dtOptions = {
-            paginationType: 'full',
-            displayLength: 20,
-            dom: 'irtp'
+        $ctrl.pageConfig = {
+            pageNumber: 1,
+            pageSize: 10,
+            pageSizeIncrements: [5, 10, 20]
         };
 
         $ctrl.columns = [
