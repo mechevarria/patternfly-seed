@@ -49,6 +49,7 @@ module.exports = function(grunt) {
                 port: exposePort,
                 hostname: '0.0.0.0',
                 livereload: 35729,
+                keepalive:true
             },
             livereload: {
                 options: {
