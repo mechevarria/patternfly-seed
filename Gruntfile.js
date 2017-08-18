@@ -64,7 +64,6 @@ module.exports = function(grunt) {
             dist: {
                 options: {
                     open: true,
-                    keepalive : true,
                     middleware: function() {
                         return [
                             proxySnippet,
