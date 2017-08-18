@@ -4,7 +4,7 @@
 var exposePort;
 var runtime;
 
-if (process.env.container === 'oci') {
+if (process.env.NPM_RUN) {
     exposePort = 8080;
     runtime = 'OpenShift';
 } else {
