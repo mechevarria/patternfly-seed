@@ -41,18 +41,9 @@ Requires an accessible [OpenShift Container Platform](https://www.openshift.com/
 
 For local development you can use [MiniShift](https://docs.openshift.org/latest/minishift/getting-started/installing.html)
 
-### Import nodejs image stream
-
-The current *nodejs* image stream in OpenShift is at 4 and this project requires **Node.js 6**.
-
-* Download the latest official image stream [nodejs-rhel7.json](https://raw.githubusercontent.com/openshift/library/master/official/nodejs/imagestreams/nodejs-rhel7.json)
-* `New Project` to create a new project, name **patternfly-seed**
-* `Add to Project` then click the `Import YAML/JSON` tab
-* Select the downloaded **nodejs-rhel7.json** file
-
 ### Create the New Application
 
-After importing.  Select `Add to Project -> Catalog -> JavaScript -> Node.js`.  Make sure the version is **6**
+Select `Add to Project -> Catalog -> JavaScript -> Node.js`.  Make sure the version is **6**
 * Name **patternfly-seed**
 * Git Repository URL **https://github.com/mechevarria/patternfly-seed**
 * Click create
