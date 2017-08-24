@@ -19,22 +19,33 @@ Referenced projects:
 ### Install
 This command will download all the dependencies into a local *node_modules* folder in the project root.
 
-`npm install`
+~~~bash
+npm install
+~~~
 
 ## Run Dev
-`npm run dev`
 
-This task will [eslint](http://eslint.org/) your Javascript and also serve a local site on **localhost:8081**.  In addition it will watch and live reload changes to your application
+~~~bash
+npm run dev
+~~~
 
-You can edit the server options in `Gruntfile.js` under the **connect** task configuration
+This task will [eslint](http://eslint.org/) your Javascript and also serve a local site on **localhost:8181**.  In addition it will watch and live reload changes to your application
+
+You can edit the proxy options in `gulpfile.js` to call backend services.  Not configuring a backend will result in [CORS](https://en.wikipedia.org/wiki/Cross-origin_resource_sharing) errors when making external calls.
 
 ## Run Production
 
 To do a production build that **eslints, concats, minifies and uglifies** Javascript and CSS, and then serves the site, run
 
-`npm run start`
+~~~bash
+npm run start
+~~~
 
-The generated site and assets will be in the **dist** folder
+The generated site and assets will be in the **dist** folder.  To just do a production build and not server do
+
+~~~bash
+npm run build
+~~~  
 
 ## Running on OpenShift<a name="openshift"></a>
 Requires an accessible [OpenShift Container Platform](https://www.openshift.com/container-platform/index.html) install
