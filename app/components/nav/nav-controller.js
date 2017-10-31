@@ -50,5 +50,9 @@
             $ctrl.notifyCount = $ctrl.menuItems.length;
         }
 
+        $ctrl.handleClose = function (data) {
+            NotifySrvc.close(data);
+        };
+
     }
 })();

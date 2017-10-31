@@ -19,12 +19,16 @@
         // initialize vars
         factory.clear();
 
+        factory.close = function(data) {
+            Notifications.remove(data);
+        };
+
         factory.success = function(msg) {
             notify('success', msg);
         };
 
-        factory.error = function(msg) {
-            notify('danger', msg);
+        factory.error = function(resp) {
+            notify('danger', resp.data.error.code + ' : ' + resp.data.error.message);
         };
 
         factory.info = function(msg) {

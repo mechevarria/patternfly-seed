@@ -1,5 +1,5 @@
 <!-- container for toast notifications -->
-<pf-toast-notification-list notifications="$ctrl.notifications">
+<pf-toast-notification-list notifications="$ctrl.notifications" show-close="true" close-callback="$ctrl.handleClose">
 </pf-toast-notification-list>
 
 <pf-vertical-navigation items="$ctrl.navItems"
