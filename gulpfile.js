@@ -50,6 +50,7 @@ gulp.task('server:dev', function () {
     connect.server({
         root: ['.'],
         livereload: true,
+        host: '0.0.0.0',
         port: exposePort,
         middleware: function () {
             var apiProxy = proxy('/odata4', {
@@ -64,6 +65,7 @@ gulp.task('server:dev', function () {
 gulp.task('server:prod', function () {
     connect.server({
         root: ['dist'],
+        host: '0.0.0.0',
         port: exposePort,
         middleware: function () {
             var apiProxy = proxy('/odata4', {
