@@ -26,7 +26,7 @@ npm install
 ## Run Dev
 
 ~~~bash
-npm run dev
+npm run start
 ~~~
 
 This task will [eslint](http://eslint.org/) your Javascript and also serve a local site on **localhost:8181**.  In addition it will watch and live reload changes to your application
@@ -38,7 +38,7 @@ You can edit the proxy options in `gulpfile.js` to call backend services.  Not c
 To do a production build that **eslints, concats, minifies and uglifies** Javascript and CSS, and then serves the site, run
 
 ~~~bash
-npm run start
+npm run prod
 ~~~
 
 The generated site and assets will be in the **dist** folder.  To just do a production build and not server do
@@ -59,4 +59,4 @@ Select `Add to Project -> Catalog -> JavaScript -> Node.js`.  Make sure the vers
 * Git Repository URL **https://github.com/mechevarria/patternfly-seed**
 * Click create
 
-The default build will run a `npm install` command and then `npm run start`.  To run in development mode change the environment variable **NPM_RUN** to **dev**
+The default build will run a `npm install` command and then `npm run start`.  To run in production mode change the environment variable **NPM_RUN** to **prod**
