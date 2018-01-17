@@ -119,6 +119,7 @@ gulp.task('usemin', function () {
 
 gulp.task('build', function () {
     runSequence(['clean', 'eslint'], ['copy:html', 'copy:img', 'copy:fonts', 'copy:data', 'usemin']);
+    
 });
 
 gulp.task('dev', function () {
@@ -126,16 +127,7 @@ gulp.task('dev', function () {
 });
 
 gulp.task('prod', function () {
-    runSequence('build', 'server:prod');
+    runSequence(['clean', 'eslint'], ['copy:html', 'copy:img', 'copy:fonts', 'copy:data', 'usemin'], 'server:prod');
 });
 
-gulp.task('default', function () {
-    var mode = process.env.NODE_ENV || 'development';
-    winston.info('Running in %s mode', mode);
-
-    if (mode === 'production') {
-        runSequence('prod');
-    } else {
-        runSequence('dev');
-    }
-});
+gulp.task('default', ['dev']);
