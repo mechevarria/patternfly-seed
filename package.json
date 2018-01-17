@@ -19,7 +19,7 @@
   },
   "devDependencies": {
     "del": "3.0.0",
-    "eslint": "4.9.0",
+    "eslint": "4.15.0",
     "eslint-config-standard": "10.2.1",
     "eslint-plugin-import": "2.8.0",
     "eslint-plugin-node": "5.2.1",
@@ -42,7 +42,8 @@
   },
   "scripts": {
     "postinstall": "npm dedupe",
-    "start": "node_modules/gulp/bin/gulp.js dev",
+    "start": "node_modules/gulp/bin/gulp.js",
+    "dev": "node_modules/gulp/bin/gulp.js dev",
     "prod": "node_modules/gulp/bin/gulp.js prod",
     "build": "node_modules/gulp/bin/gulp.js build"
   }

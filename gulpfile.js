@@ -129,4 +129,13 @@ gulp.task('prod', function () {
     runSequence('build', 'server:prod');
 });
 
-gulp.task('default', ['dev']);
+gulp.task('default', function () {
+    var mode = process.env.NODE_ENV || 'development';
+    winston.info('Running in %s mode', mode);
+
+    if (mode === 'production') {
+        runSequence('prod');
+    } else {
+        runSequence('dev');
+    }
+});

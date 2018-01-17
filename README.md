@@ -59,4 +59,5 @@ Select `Add to Project -> Catalog -> JavaScript -> Node.js`.  Make sure the vers
 * Git Repository URL **https://github.com/mechevarria/patternfly-seed**
 * Click create
 
-The default build will run a `npm install` command and then `npm run start`.  To run in production mode change the environment variable **NPM_RUN** to **prod**
+The default build will run a `npm install` command and then `npm run start`.
+  By default this will run the application in production mode.  To change the mode to development, change the environment variable **NPM_RUN** to **dev**
