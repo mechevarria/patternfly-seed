@@ -1,6 +1,6 @@
 {
   "name": "patternfly-seed",
-  "version": "0.3.0",
+  "version": "0.3.1",
   "description": "Patternfly seed project",
   "author": "Mike Echevarria <mike.echevarria@gmail.com>",
   "license": "MIT",
@@ -9,11 +9,11 @@
     "url": "https://github.com/mechevarria/patternfly-seed.git"
   },
   "dependencies": {
-    "@uirouter/angularjs": "1.0.13",
+    "@uirouter/angularjs": "1.0.14",
     "angular": "1.5.11",
     "angular-base64": "2.0.5",
     "angular-breadcrumb": "0.5.0",
-    "angular-patternfly": "4.14.4",
+    "angular-patternfly": "4.14.9",
     "angular-resource": "1.5.11",
     "lodash": "4.17.4"
   },
