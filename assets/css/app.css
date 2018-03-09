@@ -9,10 +9,8 @@ body {
     width: 100%;
     /* Set the fixed height of the footer here */
     height: 60px;
-    background-color: #1d1d1d;
-    z-index: 1500;
 }
 
 .footer p {
-    margin-top: 10px;
+    margin-top: 8px;
 }
